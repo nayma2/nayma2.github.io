@@ -1,22 +1,39 @@
-document.getElementById('submit-btn').addEventListener('click', function() {
-    // Get the values from the form fields
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+// Mobile Menu Toggle
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.querySelector('.nav-links');
 
-    // Validate the form fields
-    if (name && email && subject && message) {
-        // Display a success message (you can replace this with actual form submission logic)
-        alert(`Thank you, ${name}! Your message has been sent.\n\nSubject: ${subject}\nMessage: ${message}`);
-        
-        // Optionally, clear the input fields
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('subject').value = '';
-        document.getElementById('message').value = '';
+let isMenuOpen = false;
+
+menuIcon.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '80px';
+        navLinks.style.left = '0';
+        navLinks.style.width = '100%';
+        navLinks.style.background = '#0a0a0a';
+        navLinks.style.padding = '2rem';
+        navLinks.style.gap = '1.5rem';
     } else {
-        // Display an error message if any field is empty
-        alert('Please fill in all fields.');
+        navLinks.style.display = 'none';
     }
+});
+
+// Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') !== '#') {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Form Alert
+document.querySelector('.submit-btn').addEventListener('click', () => {
+    alert("Thank you! Your message has been received. (Demo)");
 });
