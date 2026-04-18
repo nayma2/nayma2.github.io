@@ -1,12 +1,12 @@
 // Mobile Menu Toggle
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.querySelector('.nav-links');
-
-let isMenuOpen = false;
+let menuOpen = false;
 
 menuIcon.addEventListener('click', () => {
-    isMenuOpen = !isMenuOpen;
-    if (isMenuOpen) {
+    menuOpen = !menuOpen;
+    
+    if (menuOpen) {
         navLinks.style.display = 'flex';
         navLinks.style.flexDirection = 'column';
         navLinks.style.position = 'absolute';
@@ -33,7 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form Alert
+// Form Submit Alert
 document.querySelector('.submit-btn').addEventListener('click', () => {
-    alert("Thank you! Your message has been received. (Demo)");
+    alert("Thank you! Your message has been received. (This is a demo version)");
 });
