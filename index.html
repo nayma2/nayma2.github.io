@@ -3,161 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umma Habiba Nayma | SQA Engineer</title>
+    <title>Umma Habiba Nayma | Professional SQA Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">Nayma</a>
+            <a href="#" class="logo">Nayma<span>.QA</span></a>
             
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="nav-buttons">
-                <a href="https://github.com/nayma2" target="_blank" class="btn github-btn">GitHub</a>
-                <button class="btn hire-btn">Hire Me</button>
+                <a href="https://github.com/nayma2" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                <button class="btn hire-btn" onclick="document.getElementById('hire').scrollIntoView({ behavior: 'smooth' })">Hire Me</button>
             </div>
 
             <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="about" class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Hi, I'm <span class="highlight">Umma Habiba Nayma</span></h1>
-                <h2>Fresher SQA Engineer</h2>
-                <p>Detail-oriented Software Quality Assurance Engineer passionate about delivering high-quality, bug-free software through manual and automated testing.</p>
+                <div class="badge">SQA Portfolio 2026</div>
+                <h1>Ensuring <span class="highlight">Quality</span> Through Testing</h1>
+                <p>Hi, I'm <strong>Umma Habiba Nayma</strong>. I specialize in finding bugs before your users do. Manual and Automation expert dedicated to software perfection.</p>
                 
                 <div class="hero-buttons">
-                    <button class="btn primary-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get In Touch</button>
-                    <a href="#" class="btn secondary-btn">Download CV</a>
+                    <button class="btn primary-btn" onclick="document.getElementById('hire').scrollIntoView({ behavior: 'smooth' })">Start Collaboration</button>
+                    <a href="resume.pdf" class="btn secondary-btn" download><i class="fa-solid fa-download"></i> CV</a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <img src="Nayma.png" alt="Umma Habiba Nayma">
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
-        <div class="cards-grid">
-            <div class="card">
-                <i class="fa-solid fa-bug"></i>
-                <h3>Manual Testing</h3>
-                <span>6+ Months</span>
-                <p>Functional, Regression, Exploratory & UI/UX Testing</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-robot"></i>
-                <h3>Automation Testing</h3>
-                <span>3+ Months</span>
-                <p>Selenium WebDriver with Python</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-file-lines"></i>
-                <h3>Test Case Development</h3>
-                <span>Internship</span>
-                <p>Created 150+ detailed test cases</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-bug-slash"></i>
-                <h3>Bug Reporting</h3>
-                <span>Jira & Bugzilla</span>
-                <p>Experienced in defect tracking & reporting</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section bg-dark">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-tag">Manual Testing</div>
-            <div class="skill-tag">Selenium WebDriver</div>
-            <div class="skill-tag">Python</div>
-            <div class="skill-tag">Test Case Writing</div>
-            <div class="skill-tag">Regression Testing</div>
-            <div class="skill-tag">JIRA</div>
-            <div class="skill-tag">Postman</div>
-            <div class="skill-tag">API Testing</div>
-            <div class="skill-tag">SQL Basics</div>
-            <div class="skill-tag">Agile & Scrum</div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="Gameplay.png" alt="E-commerce Testing">
-                <div class="project-info">
-                    <h3>E-Commerce Website Testing</h3>
-                    <p>Full manual testing of an e-commerce platform</p>
-                    <div class="btn-group">
-                        <button class="btn small-btn">Test Report</button>
-                        <button class="btn small-btn outline-btn">GitHub</button>
-                    </div>
+                <div class="image-blob">
+                    <img src="Nayma.png" alt="Umma Habiba Nayma">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Expertise</h2>
+                <p class="section-subtitle">Specialized in comprehensive QA testing solutions</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card experience-card">
+                    <div class="card-border"></div>
+                    <div class="icon-box"><i class="fa-solid fa-bug-slash"></i></div>
+                    <h3>Manual Testing</h3>
+                    <p>Regression, Exploratory & UI/UX Testing with detailed documentation and comprehensive test reports.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Regression Testing</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Exploratory Testing</li>
+                        <li><i class="fa-solid fa-check-circle"></i> UI/UX Testing</li>
+                    </ul>
+                </div>
+                <div class="card experience-card">
+                    <div class="card-border"></div>
+                    <div class="icon-box"><i class="fa-solid fa-terminal"></i></div>
+                    <h3>Test Automation</h3>
+                    <p>Selenium WebDriver with Python to speed up the testing lifecycle and improve test coverage effectively.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Selenium WebDriver</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Python Scripts</li>
+                        <li><i class="fa-solid fa-check-circle"></i> CI/CD Integration</li>
+                    </ul>
+                </div>
+                <div class="card experience-card">
+                    <div class="card-border"></div>
+                    <div class="icon-box"><i class="fa-solid fa-vial"></i></div>
+                    <h3>API & Database Testing</h3>
+                    <p>Writing robust test cases and bug reports using JIRA and Bugzilla with SQL expertise.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check-circle"></i> Postman API Testing</li>
+                        <li><i class="fa-solid fa-check-circle"></i> SQL Queries</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Bug Tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-glass skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Comprehensive toolkit for quality assurance</p>
             </div>
             
-            <div class="project-card">
-                <img src="question_bank.jpg" alt="Question Bank">
-                <div class="project-info">
-                    <h3>Question Bank System</h3>
-                    <p>End-to-end testing with 150+ test cases</p>
-                    <div class="btn-group">
-                        <button class="btn small-btn">Test Report</button>
-                        <button class="btn small-btn outline-btn">GitHub</button>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Testing Skills</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-header">
+                                <span class="skill-name">Manual Testing</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-header">
+                                <span class="skill-name">Selenium Automation</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-header">
+                                <span class="skill-name">API Testing</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress skill-88"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="project-card">
-                <img src="pong.png" alt="Automation">
-                <div class="project-info">
-                    <h3>Selenium Automation Scripts</h3>
-                    <p>Login, Registration & Checkout automation</p>
-                    <div class="btn-group">
-                        <button class="btn small-btn">View Scripts</button>
-                        <button class="btn small-btn outline-btn">GitHub</button>
+
+                <div class="skill-category">
+                    <h3>Tools & Languages</h3>
+                    <div class="skill-tags-grid">
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Selenium</div>
+                        <div class="skill-tag">Postman</div>
+                        <div class="skill-tag">JIRA</div>
+                        <div class="skill-tag">SQL</div>
+                        <div class="skill-tag">Git</div>
+                        <div class="skill-tag">Agile/Scrum</div>
+                        <div class="skill-tag">Bugzilla</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section bg-dark">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Your Message..." rows="6" required></textarea>
-            <button class="btn primary-btn submit-btn">Send Message</button>
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world QA testing solutions and automation frameworks</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card premium">
+                    <div class="project-badge">Featured</div>
+                    <div class="img-wrapper">
+                        <img src="Gameplay.png" alt="E-commerce">
+                        <div class="overlay-content">
+                            <p>Comprehensive automation testing suite</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Automation</span>
+                        <h3>E-Commerce Platform Testing</h3>
+                        <p class="project-description">Built and executed comprehensive test automation suite using Selenium WebDriver with Python. Achieved 85% test coverage with automated regression tests.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">CI/CD</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn-link primary-link">View Report <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#" class="btn-link secondary-link">Source Code <i class="fa-solid fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="img-wrapper">
+                        <img src="question_bank.jpg" alt="Manual">
+                        <div class="overlay-content">
+                            <p>Detailed manual testing documentation</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">Manual Testing</span>
+                        <h3>Question Bank Analysis</h3>
+                        <p class="project-description">Executed thorough manual testing with detailed test cases and comprehensive bug reports. Identified and documented 50+ critical and major issues.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JIRA</span>
+                            <span class="tech-tag">TestRail</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn-link primary-link">Test Cases <i class="fa-solid fa-document"></i></a>
+                            <a href="#" class="btn-link secondary-link">Bug Reports <i class="fa-solid fa-bug"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="img-wrapper">
+                        <img src="Gameplay.png" alt="API Testing">
+                        <div class="overlay-content">
+                            <p>API testing and integration validation</p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="category">API Testing</span>
+                        <h3>REST API Testing Suite</h3>
+                        <p class="project-description">Designed comprehensive API test collections with Postman. Validated request/response contracts and performed database assertions using SQL queries.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Postman</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">REST</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn-link primary-link">Postman Collection <i class="fa-solid fa-link"></i></a>
+                            <a href="#" class="btn-link secondary-link">Documentation <i class="fa-solid fa-file"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2026 Umma Habiba Nayma • Fresher SQA Engineer</p>
+    <!-- Hire Section -->
+    <section id="hire" class="section hire-section">
+        <div class="container">
+            <div class="hire-content">
+                <div class="hire-text">
+                    <h2 class="section-title">Ready to Improve Your QA?</h2>
+                    <p class="section-subtitle">Let me help you build robust testing strategies and catch bugs before they reach production.</p>
+                    <ul class="hire-benefits">
+                        <li><i class="fa-solid fa-check"></i> Expert QA consultation and strategy</li>
+                        <li><i class="fa-solid fa-check"></i> Custom test automation frameworks</li>
+                        <li><i class="fa-solid fa-check"></i> Comprehensive test coverage analysis</li>
+                        <li><i class="fa-solid fa-check"></i> Team training and mentoring</li>
+                    </ul>
+                </div>
+                <div class="hire-form">
+                    <h3>Get in Touch</h3>
+                    <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <input type="text" id="contactName" placeholder="Your Name" required>
+                        <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        <select id="contactService" title="Select Service Type" required>
+                            <option value="">Select Service Type</option>
+                            <option value="automation">Test Automation</option>
+                            <option value="manual">Manual Testing</option>
+                            <option value="api">API Testing</option>
+                            <option value="consultation">QA Consultation</option>
+                            <option value="training">Team Training</option>
+                        </select>
+                        <textarea id="contactMessage" placeholder="Tell me about your project..." rows="4" required></textarea>
+                        <button type="submit" class="btn primary-btn submit-btn">Send Inquiry <i class="fa-solid fa-paper-plane"></i></button>
+                        <div id="submitMessage" class="submit-success-message">Thank you for your inquiry! I'll get back to you soon.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Umma Habiba Nayma</h3>
+                    <p>Professional QA Engineer specializing in test automation and manual testing solutions.</p>
+                    <div class="socials">
+                        <a href="https://linkedin.com/in/nayma" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/nayma2" target="_blank" rel="noopener noreferrer" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter Profile"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hire">Test Automation</a></li>
+                        <li><a href="#hire">Manual Testing</a></li>
+                        <li><a href="#hire">API Testing</a></li>
+                        <li><a href="#hire">QA Consulting</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:nayma@example.com" class="email-link">nayma@example.com</a></p>
+                    <p class="contact-info">Available for freelance & full-time projects</p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="copy">© 2026 Umma Habiba Nayma. All rights reserved.</p>
+                <div class="footer-meta">
+                    <a href="#" title="Privacy Policy">Privacy Policy</a>
+                    <a href="#" title="Terms of Service">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
