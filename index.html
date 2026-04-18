@@ -3,195 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umma Habiba Nayma</title>
+    <title>Umma Habiba Nayma | SQA Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header class="header">
-        <a href="#" class="logo"><span>Umma Habiba Nayma</span></a>
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
 
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#projects">Project</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <i class="fa-solid fa-bars" id="manu-icon"></i>
-
-
-        <a href="https://github.com/nayma2" target="_blank">
-            <button class="visit-btn">Visit GitHub</button>
-        </a>
-    </header>
-
-
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="Nayma.png" alt="">
-
-            <div class="info-box">
-
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Umma Habiba Nayma </h1>
-                    <span>Web Developer</span>
-                </div>
-
-                <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn"><a href="#contact">Contact</a></div>
-                </div>
-                
-                <div class="socials">
-                    <a href="https://github.com/nayma2" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/feed/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.fiverr.com/nayma20/buying?source=avatar_menu_profile" target="_blank">
-                        <img src="fiverr.jpeg" alt="Fiverr" style="width: 40px; height: 40px;">
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- This is a experience section -->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-
-        <div class="experience-info">
-
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Game Developer</span>
-                    <h3>5 Years</h3>
-                    <p>Hi I'm Umma Habiba Nayma  
-                        and I currently reside in Ashulia,
-                        Dhaka, although 
-                        I originally hail from Barisal.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-file-code"></i>
-                    <span>Apps Developer</span>
-                    <h3>5 Years</h3>
-                    <p>Hi I'm Umma Habiba Nayma  
-                        and I currently reside in Ashulia,
-                        Dhaka, although 
-                        I originally hail from Barisal.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-laptop"></i>
-                    <span>Web Developer</span>
-                    <h3>2 Years</h3>
-                    <p>Hi I'm Umma Habiba Nayma 
-                        and I currently reside in Ashulia,
-                        Dhaka, although 
-                        I originally hail from Barisal.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-solid fa-list"></i>
-                    <span>Content Maneger</span>
-                    <h3>2 Years</h3>
-                    <p>Hi I'm Umma Habiba Nayma
-                        and I currently reside in Ashulia,
-                        Dhaka, although 
-                        I originally hail from Barisal.</p>
-                </div>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>Nayma</span>
+            </a>
             
-            <img src="Nayma.png" alt="">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="https://github.com/nayma2" target="_blank" class="btn github-btn">GitHub</a>
+                <button class="btn hire-btn">Hire Me</button>
+            </div>
+
+            <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Umma Habiba Nayma</span></h1>
+                <h2>Fresher SQA Engineer | Software Testing Enthusiast</h2>
+                <p>Passionate about ensuring software quality through manual and automated testing. Detail-oriented and eager to deliver bug-free applications.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn primary-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
+                        Get In Touch
+                    </button>
+                    <a href="#" class="btn secondary-btn">Download CV</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/nayma2" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.fiverr.com/nayma20" target="_blank"><i class="fa-solid fa-store"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="Nayma.png" alt="Umma Habiba Nayma">
+                <div class="experience-badge">
+                    <span class="number">Fresher</span>
+                    <span class="text">SQA Engineer</span>
+                </div>
+            </div>
         </div>
     </section>
 
-
-    <!-- This is a project section -->
-    <section id="projects" class="projects">
-
-        <h2 class="section-title">Recent Projects</h2>
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="Gameplay.png" alt="">
-                <h3>Project X</h3>
-                <p>This is a python based shooting game.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn"> Gitgub Repo</div>
-                </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+            <div class="card">
+                <i class="fa-solid fa-bug icon"></i>
+                <h3>Manual Testing</h3>
+                <span class="duration">6 Months</span>
+                <p>Hands-on experience in functional, regression, and exploratory testing.</p>
             </div>
-
-
-            <div class="project-card">
-                <img src="question_bank.jpg" alt="">
-                <h3>Project Y</h3>
-                <p>This is a Question Bank project.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Gitgub Repo</div>
-                </div>
+            <div class="card">
+                <i class="fa-solid fa-robot icon"></i>
+                <h3>Automation Testing</h3>
+                <span class="duration">3 Months</span>
+                <p>Learning Selenium WebDriver with Python for web application automation.</p>
             </div>
-
-            <div class="project-card">
-                <img src="pong.png" alt="">
-                <h3>Project Z</h3>
-                <p>This is a Pong game.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Gitgub Repo</div>
-                </div>
+            <div class="card">
+                <i class="fa-solid fa-file-alt icon"></i>
+                <h3>Test Case Development</h3>
+                <span class="duration">Internship</span>
+                <p>Designed and executed test cases for multiple web and mobile applications.</p>
             </div>
-        </div>  
-
+            <div class="card">
+                <i class="fa-solid fa-chart-simple icon"></i>
+                <h3>Bug Reporting</h3>
+                <span class="duration">Active</span>
+                <p>Experienced in using Jira and Bugzilla for defect tracking and reporting.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="input-box">
-            <h2 class="input-title">Contact Me</h2>
-            <div class="input">
-                <input type="text" id="name" placeholder="Your Name" required>
+    <!-- Skills -->
+    <section id="skills" class="section bg-dark">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Manual Testing</div>
+            <div class="skill-item">Selenium WebDriver</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Test Case Writing</div>
+            <div class="skill-item">Regression Testing</div>
+            <div class="skill-item">JIRA</div>
+            <div class="skill-item">Postman (API Testing)</div>
+            <div class="skill-item">SQL Basics</div>
+            <div class="skill-item">Agile & Scrum</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects & Testing Work</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Gameplay.png" alt="E-commerce Testing">
+                <div class="project-info">
+                    <h3>E-Commerce Website Testing</h3>
+                    <p>Complete manual testing including functional, UI/UX, and payment flow testing.</p>
+                    <div class="project-buttons">
+                        <button class="btn small-btn">Test Report</button>
+                        <button class="btn small-btn outline-btn">GitHub</button>
+                    </div>
+                </div>
             </div>
-            <div class="input">
-                <input type="email" id="email" placeholder="example@email.com" required>
+
+            <div class="project-card">
+                <img src="question_bank.jpg" alt="Question Bank Testing">
+                <div class="project-info">
+                    <h3>Question Bank Web App</h3>
+                    <p>End-to-end testing of question management system with 150+ test cases.</p>
+                    <div class="project-buttons">
+                        <button class="btn small-btn">Test Report</button>
+                        <button class="btn small-btn outline-btn">GitHub</button>
+                    </div>
+                </div>
             </div>
-            <div class="input">
-                <input type="text" id="subject" placeholder="Subject" required>
+
+            <div class="project-card">
+                <img src="pong.png" alt="Automation Project">
+                <div class="project-info">
+                    <h3>Selenium Automation Framework</h3>
+                    <p>Built basic automation scripts for login, registration, and checkout modules.</p>
+                    <div class="project-buttons">
+                        <button class="btn small-btn">View Scripts</button>
+                        <button class="btn small-btn outline-btn">GitHub</button>
+                    </div>
+                </div>
             </div>
-            <div class="input">
-                <textarea id="message" placeholder="Your Message" required></textarea>
-            </div>
-            <div class="btn" id="submit-btn">Submit</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section bg-dark">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Your Message (e.g. Job Opportunity, Internship, etc.)" rows="6" required></textarea>
+            <button class="btn primary-btn submit-btn">Send Message</button>
         </div>
     </section>
 
     <footer>
-       
-
-        <p class="copyright">© All Rights Reserved | Umma Habiba Nayma </p>
+        <p>© 2026 Umma Habiba Nayma | Fresher SQA Engineer</p>
     </footer>
-
-
 
     <script src="script.js"></script>
 </body>
